@@ -1,47 +1,13 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 
-;; COLOR-THEME
-;;
-(add-to-list 'load-path "~/.emacs.d/color-theme")
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-hober)))
-(load-file "~/.emacs.d/cyberpunk.el")
-(color-theme-cyberpunk)
-(set-cursor-color "yellow")
-(require 'live-fontify-hex)
+;; INTERFACE CONF 
+(load-file "~/.emacs.d/interface.conf.el")
 
-;; MARKDOWN
-;;
-(autoload 'markdown-mode "markdown-mode/markdown-mode"
-   "Major mode for editing Markdown files" t)
-
-(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-
-;; GLSL 
-;;
-(autoload 'glsl-mode "glsl-mode/glsl-mode" nil t)
-  (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
-  (add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
-  (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
-  (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
+;; EXTRA MODES
+(load-file "~/.emacs.d/other-modes.conf.el")
 
 ;; AUTOCOMPLETE
-;;
-(add-to-list 'load-path "~/.emacs.d/popup-el")
-(add-to-list 'load-path "~/.emacs.d/auto-complete")
-(require 'auto-complete-config)
-(ac-config-default) 
-
-;; POPWIN
-;;
-(add-to-list 'load-path "~/.emacs.d/popwin-el")
-(require 'popwin)
-(setq display-buffer-function 'popwin:display-buffer)
+(load-file "~/.emacs.d/auto-complete-conf.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
