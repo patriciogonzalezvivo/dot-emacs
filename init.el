@@ -37,6 +37,12 @@
 (require 'auto-complete-config)
 (ac-config-default) 
 
+;; POPWIN
+;;
+(add-to-list 'load-path "~/.emacs.d/popwin-el")
+(require 'popwin)
+(setq display-buffer-function 'popwin:display-buffer)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
