@@ -1,0 +1,6 @@
+[submodule "markdown-mode"]
+	path = markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "glsl-mode"]
+	path = glsl-mode
+	url = git@github.com:jimhourihan/glsl-mode.git
