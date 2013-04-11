@@ -10,9 +10,6 @@
 [submodule "auto-complete"]
 	path = auto-complete
 	url = git@github.com:auto-complete/auto-complete.git
-[submodule "emacs-live"]
-	path = emacs-live
-	url = git@github.com:overtone/emacs-live.git
 [submodule "popwin-el"]
 	path = popwin-el
 	url = https://github.com/m2ym/popwin-el
