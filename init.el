@@ -1,13 +1,13 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 
-;; INTERFACE CONF 
 (load-file "~/.emacs.d/interface.conf.el")
-
-;; EXTRA MODES
 (load-file "~/.emacs.d/other-modes.conf.el")
-
-;; AUTOCOMPLETE
 (load-file "~/.emacs.d/auto-complete-conf.el")
+(load-file "~/.emacs.d/osx-conf.el")
+(load-file "~/.emacs.d/mouse-conf.el")
+
+(setq ispell-program-name "aspell" ; use aspell instead of ispell
+      ispell-extra-args '("--sug-mode=ultra"))(autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

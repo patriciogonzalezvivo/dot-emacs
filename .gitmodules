@@ -13,3 +13,12 @@
 [submodule "popwin-el"]
 	path = popwin-el
 	url = https://github.com/m2ym/popwin-el
+[submodule "js2-mode"]
+	path = js2-mode
+	url = git://github.com/mooz/js2-mode.git
+[submodule "win-switch"]
+	path = win-switch
+	url = git@github.com:genovese/win-switch.git
+[submodule "exec-path-from-shell"]
+	path = exec-path-from-shell
+	url = git@github.com:purcell/exec-path-from-shell.git
